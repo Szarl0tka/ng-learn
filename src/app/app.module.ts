@@ -12,15 +12,20 @@ import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ExerciseSearchComponent } from './exercise-search/exercise-search.component';
+import { MotionsListComponent } from './motions-list/motions-list.component';
 
 @NgModule({
+  exports: [
+    MotionsListComponent
+  ],
   declarations: [
     AppComponent,
     ExercisesComponent,
     ExerciseDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    ExerciseSearchComponent
+    ExerciseSearchComponent,
+    MotionsListComponent
   ],
   imports: [
     BrowserModule,
